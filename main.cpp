@@ -7,6 +7,7 @@ struct HelloHandler : public Http::Handler {
   void onRequest(const Http::Request&, Http::ResponseWriter writer) override {
     // 
     //task -->  threadpool -->request response -->  ---> cal  -->response.send()
+    writer.headers().add<Http::Header::AccessControlAllowOrigin>("*");
     writer.send(Http::Code::Ok, "Hello, World!");
   }
 };
