@@ -1,0 +1,3 @@
+/home/icf/vote/build/CMakeFiles/rebuild_cache.dir
+/home/icf/vote/build/CMakeFiles/edit_cache.dir
+/home/icf/vote/build/CMakeFiles/vote_server.dir
