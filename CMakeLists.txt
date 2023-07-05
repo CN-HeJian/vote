@@ -5,5 +5,5 @@ project(vote_server)
 find_package(PkgConfig)
 pkg_check_modules(Pistache REQUIRED IMPORTED_TARGET libpistache)
 
-add_executable(vote_server main.cpp)
+add_executable(vote_server main.cpp requestHandler.h requestHandler.cpp server.h server.cpp)
 target_link_libraries(${PROJECT_NAME} PkgConfig::Pistache)

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/vote_server.dir/main.cpp.o CMakeFiles/vote_server.dir/requestHandler.cpp.o CMakeFiles/vote_server.dir/server.cpp.o  -o vote_server  -Wl,-rpath,/usr/local/lib/x86_64-linux-gnu /usr/local/lib/x86_64-linux-gnu/libpistache.so 

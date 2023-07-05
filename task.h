@@ -2,8 +2,6 @@
 #define CACHESYSTEM_TASK_H
 
 
-//using callback = void(*)(void*);
-
 #include <functional>
 #include <iostream>
 #include <memory>
