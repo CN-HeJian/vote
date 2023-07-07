@@ -70,9 +70,113 @@ CMakeFiles/vote_server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/main.cpp -o CMakeFiles/vote_server.dir/main.cpp.s
 
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.o: ../protobuf/getVoteResultByOneJudgeResponse.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.o -c /home/icf/vote/protobuf/getVoteResultByOneJudgeResponse.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/getVoteResultByOneJudgeResponse.pb.cc > CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/getVoteResultByOneJudgeResponse.pb.cc -o CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.s
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.o: ../protobuf/getVoteResultByOneJudge.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.o -c /home/icf/vote/protobuf/getVoteResultByOneJudge.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/getVoteResultByOneJudge.pb.cc > CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/getVoteResultByOneJudge.pb.cc -o CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.s
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.o: ../protobuf/getVoteResult.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.o -c /home/icf/vote/protobuf/getVoteResult.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/getVoteResult.pb.cc > CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/getVoteResult.pb.cc -o CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.s
+
+CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.o: ../protobuf/getAllVotes.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.o -c /home/icf/vote/protobuf/getAllVotes.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/getAllVotes.pb.cc > CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/getAllVotes.pb.cc -o CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.s
+
+CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.o: ../protobuf/getAllVotesResponse.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.o -c /home/icf/vote/protobuf/getAllVotesResponse.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/getAllVotesResponse.pb.cc > CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/getAllVotesResponse.pb.cc -o CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.s
+
+CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.o: ../protobuf/vote.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.o -c /home/icf/vote/protobuf/vote.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/vote.pb.cc > CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/vote.pb.cc -o CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.s
+
+CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.o: ../protobuf/voteResponse.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.o -c /home/icf/vote/protobuf/voteResponse.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/voteResponse.pb.cc > CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/voteResponse.pb.cc -o CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.s
+
+CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
+CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.o: ../protobuf/createVote.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.o -c /home/icf/vote/protobuf/createVote.pb.cc
+
+CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/icf/vote/protobuf/createVote.pb.cc > CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.i
+
+CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/icf/vote/protobuf/createVote.pb.cc -o CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.s
+
 CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
 CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o: ../protobuf/createVoteResponse.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o -c /home/icf/vote/protobuf/createVoteResponse.pb.cc
 
 CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.i: cmake_force
@@ -85,7 +189,7 @@ CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.s: cmake_force
 
 CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
 CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o: ../protobuf/loginRequest.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o -c /home/icf/vote/protobuf/loginRequest.pb.cc
 
 CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.i: cmake_force
@@ -98,7 +202,7 @@ CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.s: cmake_force
 
 CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o: CMakeFiles/vote_server.dir/flags.make
 CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o: ../protobuf/loginResponse.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o -c /home/icf/vote/protobuf/loginResponse.pb.cc
 
 CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.i: cmake_force
@@ -111,7 +215,7 @@ CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.s: cmake_force
 
 CMakeFiles/vote_server.dir/clientProxy.cpp.o: CMakeFiles/vote_server.dir/flags.make
 CMakeFiles/vote_server.dir/clientProxy.cpp.o: ../clientProxy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vote_server.dir/clientProxy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/vote_server.dir/clientProxy.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/clientProxy.cpp.o -c /home/icf/vote/clientProxy.cpp
 
 CMakeFiles/vote_server.dir/clientProxy.cpp.i: cmake_force
@@ -124,7 +228,7 @@ CMakeFiles/vote_server.dir/clientProxy.cpp.s: cmake_force
 
 CMakeFiles/vote_server.dir/serverProxy.cpp.o: CMakeFiles/vote_server.dir/flags.make
 CMakeFiles/vote_server.dir/serverProxy.cpp.o: ../serverProxy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vote_server.dir/serverProxy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/vote_server.dir/serverProxy.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vote_server.dir/serverProxy.cpp.o -c /home/icf/vote/serverProxy.cpp
 
 CMakeFiles/vote_server.dir/serverProxy.cpp.i: cmake_force
@@ -138,6 +242,14 @@ CMakeFiles/vote_server.dir/serverProxy.cpp.s: cmake_force
 # Object files for target vote_server
 vote_server_OBJECTS = \
 "CMakeFiles/vote_server.dir/main.cpp.o" \
+"CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.o" \
+"CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.o" \
+"CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.o" \
+"CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.o" \
+"CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.o" \
+"CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.o" \
+"CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.o" \
+"CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.o" \
 "CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o" \
 "CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o" \
 "CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o" \
@@ -148,6 +260,14 @@ vote_server_OBJECTS = \
 vote_server_EXTERNAL_OBJECTS =
 
 vote_server: CMakeFiles/vote_server.dir/main.cpp.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.o
+vote_server: CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.o
 vote_server: CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o
 vote_server: CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o
 vote_server: CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o
@@ -156,7 +276,7 @@ vote_server: CMakeFiles/vote_server.dir/serverProxy.cpp.o
 vote_server: CMakeFiles/vote_server.dir/build.make
 vote_server: /usr/local/lib/x86_64-linux-gnu/libpistache.so
 vote_server: CMakeFiles/vote_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable vote_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/icf/vote/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable vote_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vote_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

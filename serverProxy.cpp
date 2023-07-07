@@ -1,7 +1,3 @@
-//
-// Created by 22770 on 2023/7/6.
-//
-
 #include "serverProxy.h"
 
 serverProxy::~serverProxy() {
@@ -21,27 +17,22 @@ std::string serverProxy::remoteCall(std::string msg) {
     serveraddr.sin_family = AF_INET;
     serveraddr.sin_addr.s_addr = inet_addr(SERVER_ADDRESS);
     serveraddr.sin_port = htons(SERVER_PORT);
-    if (connect(clientFd, (struct sockaddr *)&serveraddr, sizeof(serveraddr)) == -1)
-    {
+    if (connect(clientFd, (struct sockaddr *)&serveraddr, sizeof(serveraddr)) == -1){
         std::cout << "connect socket error." << errno <<std::endl;
         return "";
     }
     int send_ret = send(clientFd, (const void *)msg.c_str(),msg.length(), 0);
-    if(send_ret < 0)
-    {
+    if(send_ret < 0){
         printf("send msg error: %s(errno: %d)\n", strerror(errno), errno);
     }
     //直接调用recv函数，程序会阻塞在recv函数调用处
-    char recvbuf[64] = {0};
-    int recv_ret = recv(clientFd, recvbuf, 64, 0);
-    if (recv_ret > 0)
-    {
+    char recvbuf[256] = {0};
+    int recv_ret = recv(clientFd, recvbuf, 256, 0);
+    if (recv_ret > 0){
         std::string str1(recvbuf);
         std::cout << "recv successfully." << str1<<std::endl;
         return str1;
-    }
-    else
-    {
+    }else{
         std::cout << "recv data error." << std::endl;
     }
     return "";

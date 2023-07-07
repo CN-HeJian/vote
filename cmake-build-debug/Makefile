@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+protobuf/createVote.pb.o: protobuf/createVote.pb.cc.o
+
+.PHONY : protobuf/createVote.pb.o
+
+# target to build an object file
+protobuf/createVote.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.o
+.PHONY : protobuf/createVote.pb.cc.o
+
+protobuf/createVote.pb.i: protobuf/createVote.pb.cc.i
+
+.PHONY : protobuf/createVote.pb.i
+
+# target to preprocess a source file
+protobuf/createVote.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.i
+.PHONY : protobuf/createVote.pb.cc.i
+
+protobuf/createVote.pb.s: protobuf/createVote.pb.cc.s
+
+.PHONY : protobuf/createVote.pb.s
+
+# target to generate assembly for a file
+protobuf/createVote.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/createVote.pb.cc.s
+.PHONY : protobuf/createVote.pb.cc.s
+
 protobuf/createVoteResponse.pb.o: protobuf/createVoteResponse.pb.cc.o
 
 .PHONY : protobuf/createVoteResponse.pb.o
@@ -203,6 +230,141 @@ protobuf/createVoteResponse.pb.s: protobuf/createVoteResponse.pb.cc.s
 protobuf/createVoteResponse.pb.cc.s:
 	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.s
 .PHONY : protobuf/createVoteResponse.pb.cc.s
+
+protobuf/getAllVotes.pb.o: protobuf/getAllVotes.pb.cc.o
+
+.PHONY : protobuf/getAllVotes.pb.o
+
+# target to build an object file
+protobuf/getAllVotes.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.o
+.PHONY : protobuf/getAllVotes.pb.cc.o
+
+protobuf/getAllVotes.pb.i: protobuf/getAllVotes.pb.cc.i
+
+.PHONY : protobuf/getAllVotes.pb.i
+
+# target to preprocess a source file
+protobuf/getAllVotes.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.i
+.PHONY : protobuf/getAllVotes.pb.cc.i
+
+protobuf/getAllVotes.pb.s: protobuf/getAllVotes.pb.cc.s
+
+.PHONY : protobuf/getAllVotes.pb.s
+
+# target to generate assembly for a file
+protobuf/getAllVotes.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getAllVotes.pb.cc.s
+.PHONY : protobuf/getAllVotes.pb.cc.s
+
+protobuf/getAllVotesResponse.pb.o: protobuf/getAllVotesResponse.pb.cc.o
+
+.PHONY : protobuf/getAllVotesResponse.pb.o
+
+# target to build an object file
+protobuf/getAllVotesResponse.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.o
+.PHONY : protobuf/getAllVotesResponse.pb.cc.o
+
+protobuf/getAllVotesResponse.pb.i: protobuf/getAllVotesResponse.pb.cc.i
+
+.PHONY : protobuf/getAllVotesResponse.pb.i
+
+# target to preprocess a source file
+protobuf/getAllVotesResponse.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.i
+.PHONY : protobuf/getAllVotesResponse.pb.cc.i
+
+protobuf/getAllVotesResponse.pb.s: protobuf/getAllVotesResponse.pb.cc.s
+
+.PHONY : protobuf/getAllVotesResponse.pb.s
+
+# target to generate assembly for a file
+protobuf/getAllVotesResponse.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getAllVotesResponse.pb.cc.s
+.PHONY : protobuf/getAllVotesResponse.pb.cc.s
+
+protobuf/getVoteResult.pb.o: protobuf/getVoteResult.pb.cc.o
+
+.PHONY : protobuf/getVoteResult.pb.o
+
+# target to build an object file
+protobuf/getVoteResult.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.o
+.PHONY : protobuf/getVoteResult.pb.cc.o
+
+protobuf/getVoteResult.pb.i: protobuf/getVoteResult.pb.cc.i
+
+.PHONY : protobuf/getVoteResult.pb.i
+
+# target to preprocess a source file
+protobuf/getVoteResult.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.i
+.PHONY : protobuf/getVoteResult.pb.cc.i
+
+protobuf/getVoteResult.pb.s: protobuf/getVoteResult.pb.cc.s
+
+.PHONY : protobuf/getVoteResult.pb.s
+
+# target to generate assembly for a file
+protobuf/getVoteResult.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResult.pb.cc.s
+.PHONY : protobuf/getVoteResult.pb.cc.s
+
+protobuf/getVoteResultByOneJudge.pb.o: protobuf/getVoteResultByOneJudge.pb.cc.o
+
+.PHONY : protobuf/getVoteResultByOneJudge.pb.o
+
+# target to build an object file
+protobuf/getVoteResultByOneJudge.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.o
+.PHONY : protobuf/getVoteResultByOneJudge.pb.cc.o
+
+protobuf/getVoteResultByOneJudge.pb.i: protobuf/getVoteResultByOneJudge.pb.cc.i
+
+.PHONY : protobuf/getVoteResultByOneJudge.pb.i
+
+# target to preprocess a source file
+protobuf/getVoteResultByOneJudge.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.i
+.PHONY : protobuf/getVoteResultByOneJudge.pb.cc.i
+
+protobuf/getVoteResultByOneJudge.pb.s: protobuf/getVoteResultByOneJudge.pb.cc.s
+
+.PHONY : protobuf/getVoteResultByOneJudge.pb.s
+
+# target to generate assembly for a file
+protobuf/getVoteResultByOneJudge.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudge.pb.cc.s
+.PHONY : protobuf/getVoteResultByOneJudge.pb.cc.s
+
+protobuf/getVoteResultByOneJudgeResponse.pb.o: protobuf/getVoteResultByOneJudgeResponse.pb.cc.o
+
+.PHONY : protobuf/getVoteResultByOneJudgeResponse.pb.o
+
+# target to build an object file
+protobuf/getVoteResultByOneJudgeResponse.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.o
+.PHONY : protobuf/getVoteResultByOneJudgeResponse.pb.cc.o
+
+protobuf/getVoteResultByOneJudgeResponse.pb.i: protobuf/getVoteResultByOneJudgeResponse.pb.cc.i
+
+.PHONY : protobuf/getVoteResultByOneJudgeResponse.pb.i
+
+# target to preprocess a source file
+protobuf/getVoteResultByOneJudgeResponse.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.i
+.PHONY : protobuf/getVoteResultByOneJudgeResponse.pb.cc.i
+
+protobuf/getVoteResultByOneJudgeResponse.pb.s: protobuf/getVoteResultByOneJudgeResponse.pb.cc.s
+
+.PHONY : protobuf/getVoteResultByOneJudgeResponse.pb.s
+
+# target to generate assembly for a file
+protobuf/getVoteResultByOneJudgeResponse.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/getVoteResultByOneJudgeResponse.pb.cc.s
+.PHONY : protobuf/getVoteResultByOneJudgeResponse.pb.cc.s
 
 protobuf/loginRequest.pb.o: protobuf/loginRequest.pb.cc.o
 
@@ -258,6 +420,60 @@ protobuf/loginResponse.pb.cc.s:
 	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.s
 .PHONY : protobuf/loginResponse.pb.cc.s
 
+protobuf/vote.pb.o: protobuf/vote.pb.cc.o
+
+.PHONY : protobuf/vote.pb.o
+
+# target to build an object file
+protobuf/vote.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.o
+.PHONY : protobuf/vote.pb.cc.o
+
+protobuf/vote.pb.i: protobuf/vote.pb.cc.i
+
+.PHONY : protobuf/vote.pb.i
+
+# target to preprocess a source file
+protobuf/vote.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.i
+.PHONY : protobuf/vote.pb.cc.i
+
+protobuf/vote.pb.s: protobuf/vote.pb.cc.s
+
+.PHONY : protobuf/vote.pb.s
+
+# target to generate assembly for a file
+protobuf/vote.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/vote.pb.cc.s
+.PHONY : protobuf/vote.pb.cc.s
+
+protobuf/voteResponse.pb.o: protobuf/voteResponse.pb.cc.o
+
+.PHONY : protobuf/voteResponse.pb.o
+
+# target to build an object file
+protobuf/voteResponse.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.o
+.PHONY : protobuf/voteResponse.pb.cc.o
+
+protobuf/voteResponse.pb.i: protobuf/voteResponse.pb.cc.i
+
+.PHONY : protobuf/voteResponse.pb.i
+
+# target to preprocess a source file
+protobuf/voteResponse.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.i
+.PHONY : protobuf/voteResponse.pb.cc.i
+
+protobuf/voteResponse.pb.s: protobuf/voteResponse.pb.cc.s
+
+.PHONY : protobuf/voteResponse.pb.s
+
+# target to generate assembly for a file
+protobuf/voteResponse.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/voteResponse.pb.cc.s
+.PHONY : protobuf/voteResponse.pb.cc.s
+
 serverProxy.o: serverProxy.cpp.o
 
 .PHONY : serverProxy.o
@@ -300,15 +516,39 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... protobuf/createVote.pb.o"
+	@echo "... protobuf/createVote.pb.i"
+	@echo "... protobuf/createVote.pb.s"
 	@echo "... protobuf/createVoteResponse.pb.o"
 	@echo "... protobuf/createVoteResponse.pb.i"
 	@echo "... protobuf/createVoteResponse.pb.s"
+	@echo "... protobuf/getAllVotes.pb.o"
+	@echo "... protobuf/getAllVotes.pb.i"
+	@echo "... protobuf/getAllVotes.pb.s"
+	@echo "... protobuf/getAllVotesResponse.pb.o"
+	@echo "... protobuf/getAllVotesResponse.pb.i"
+	@echo "... protobuf/getAllVotesResponse.pb.s"
+	@echo "... protobuf/getVoteResult.pb.o"
+	@echo "... protobuf/getVoteResult.pb.i"
+	@echo "... protobuf/getVoteResult.pb.s"
+	@echo "... protobuf/getVoteResultByOneJudge.pb.o"
+	@echo "... protobuf/getVoteResultByOneJudge.pb.i"
+	@echo "... protobuf/getVoteResultByOneJudge.pb.s"
+	@echo "... protobuf/getVoteResultByOneJudgeResponse.pb.o"
+	@echo "... protobuf/getVoteResultByOneJudgeResponse.pb.i"
+	@echo "... protobuf/getVoteResultByOneJudgeResponse.pb.s"
 	@echo "... protobuf/loginRequest.pb.o"
 	@echo "... protobuf/loginRequest.pb.i"
 	@echo "... protobuf/loginRequest.pb.s"
 	@echo "... protobuf/loginResponse.pb.o"
 	@echo "... protobuf/loginResponse.pb.i"
 	@echo "... protobuf/loginResponse.pb.s"
+	@echo "... protobuf/vote.pb.o"
+	@echo "... protobuf/vote.pb.i"
+	@echo "... protobuf/vote.pb.s"
+	@echo "... protobuf/voteResponse.pb.o"
+	@echo "... protobuf/voteResponse.pb.i"
+	@echo "... protobuf/voteResponse.pb.s"
 	@echo "... serverProxy.o"
 	@echo "... serverProxy.i"
 	@echo "... serverProxy.s"

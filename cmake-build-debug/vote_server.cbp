@@ -91,10 +91,46 @@
 		<Unit filename="/home/icf/vote/main.cpp">
 			<Option target="vote_server"/>
 		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/createVote.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/createVote.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
 		<Unit filename="/home/icf/vote/protobuf/createVoteResponse.pb.cc">
 			<Option target="vote_server"/>
 		</Unit>
 		<Unit filename="/home/icf/vote/protobuf/createVoteResponse.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getAllVotes.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getAllVotes.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getAllVotesResponse.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getAllVotesResponse.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getVoteResult.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getVoteResult.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getVoteResultByOneJudge.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getVoteResultByOneJudge.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getVoteResultByOneJudgeResponse.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/getVoteResultByOneJudgeResponse.pb.h">
 			<Option target="vote_server"/>
 		</Unit>
 		<Unit filename="/home/icf/vote/protobuf/loginRequest.pb.cc">
@@ -104,6 +140,18 @@
 			<Option target="vote_server"/>
 		</Unit>
 		<Unit filename="/home/icf/vote/protobuf/loginResponse.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/vote.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/vote.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/voteResponse.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/voteResponse.pb.h">
 			<Option target="vote_server"/>
 		</Unit>
 		<Unit filename="/home/icf/vote/serverProxy.cpp">
