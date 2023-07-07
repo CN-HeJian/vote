@@ -4,9 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/icf/vote/clientProxy.cpp" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/clientProxy.cpp.o"
   "/home/icf/vote/main.cpp" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/main.cpp.o"
-  "/home/icf/vote/requestHandler.cpp" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/requestHandler.cpp.o"
-  "/home/icf/vote/server.cpp" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/server.cpp.o"
+  "/home/icf/vote/protobuf/createVoteResponse.pb.cc" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o"
+  "/home/icf/vote/protobuf/loginRequest.pb.cc" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o"
+  "/home/icf/vote/protobuf/loginResponse.pb.cc" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o"
+  "/home/icf/vote/serverProxy.cpp" "/home/icf/vote/cmake-build-debug/CMakeFiles/vote_server.dir/serverProxy.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

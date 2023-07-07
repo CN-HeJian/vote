@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/vote_server.dir/clientProxy.cpp.o"
   "CMakeFiles/vote_server.dir/main.cpp.o"
-  "CMakeFiles/vote_server.dir/requestHandler.cpp.o"
-  "CMakeFiles/vote_server.dir/server.cpp.o"
+  "CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o"
+  "CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o"
+  "CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o"
+  "CMakeFiles/vote_server.dir/serverProxy.cpp.o"
   "vote_server"
   "vote_server.pdb"
 )

@@ -123,6 +123,33 @@ vote_server/fast:
 	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/build
 .PHONY : vote_server/fast
 
+clientProxy.o: clientProxy.cpp.o
+
+.PHONY : clientProxy.o
+
+# target to build an object file
+clientProxy.cpp.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/clientProxy.cpp.o
+.PHONY : clientProxy.cpp.o
+
+clientProxy.i: clientProxy.cpp.i
+
+.PHONY : clientProxy.i
+
+# target to preprocess a source file
+clientProxy.cpp.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/clientProxy.cpp.i
+.PHONY : clientProxy.cpp.i
+
+clientProxy.s: clientProxy.cpp.s
+
+.PHONY : clientProxy.s
+
+# target to generate assembly for a file
+clientProxy.cpp.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/clientProxy.cpp.s
+.PHONY : clientProxy.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,59 +177,113 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-requestHandler.o: requestHandler.cpp.o
+protobuf/createVoteResponse.pb.o: protobuf/createVoteResponse.pb.cc.o
 
-.PHONY : requestHandler.o
-
-# target to build an object file
-requestHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/requestHandler.cpp.o
-.PHONY : requestHandler.cpp.o
-
-requestHandler.i: requestHandler.cpp.i
-
-.PHONY : requestHandler.i
-
-# target to preprocess a source file
-requestHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/requestHandler.cpp.i
-.PHONY : requestHandler.cpp.i
-
-requestHandler.s: requestHandler.cpp.s
-
-.PHONY : requestHandler.s
-
-# target to generate assembly for a file
-requestHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/requestHandler.cpp.s
-.PHONY : requestHandler.cpp.s
-
-server.o: server.cpp.o
-
-.PHONY : server.o
+.PHONY : protobuf/createVoteResponse.pb.o
 
 # target to build an object file
-server.cpp.o:
-	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/server.cpp.o
-.PHONY : server.cpp.o
+protobuf/createVoteResponse.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.o
+.PHONY : protobuf/createVoteResponse.pb.cc.o
 
-server.i: server.cpp.i
+protobuf/createVoteResponse.pb.i: protobuf/createVoteResponse.pb.cc.i
 
-.PHONY : server.i
+.PHONY : protobuf/createVoteResponse.pb.i
 
 # target to preprocess a source file
-server.cpp.i:
-	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/server.cpp.i
-.PHONY : server.cpp.i
+protobuf/createVoteResponse.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.i
+.PHONY : protobuf/createVoteResponse.pb.cc.i
 
-server.s: server.cpp.s
+protobuf/createVoteResponse.pb.s: protobuf/createVoteResponse.pb.cc.s
 
-.PHONY : server.s
+.PHONY : protobuf/createVoteResponse.pb.s
 
 # target to generate assembly for a file
-server.cpp.s:
-	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/server.cpp.s
-.PHONY : server.cpp.s
+protobuf/createVoteResponse.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/createVoteResponse.pb.cc.s
+.PHONY : protobuf/createVoteResponse.pb.cc.s
+
+protobuf/loginRequest.pb.o: protobuf/loginRequest.pb.cc.o
+
+.PHONY : protobuf/loginRequest.pb.o
+
+# target to build an object file
+protobuf/loginRequest.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.o
+.PHONY : protobuf/loginRequest.pb.cc.o
+
+protobuf/loginRequest.pb.i: protobuf/loginRequest.pb.cc.i
+
+.PHONY : protobuf/loginRequest.pb.i
+
+# target to preprocess a source file
+protobuf/loginRequest.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.i
+.PHONY : protobuf/loginRequest.pb.cc.i
+
+protobuf/loginRequest.pb.s: protobuf/loginRequest.pb.cc.s
+
+.PHONY : protobuf/loginRequest.pb.s
+
+# target to generate assembly for a file
+protobuf/loginRequest.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/loginRequest.pb.cc.s
+.PHONY : protobuf/loginRequest.pb.cc.s
+
+protobuf/loginResponse.pb.o: protobuf/loginResponse.pb.cc.o
+
+.PHONY : protobuf/loginResponse.pb.o
+
+# target to build an object file
+protobuf/loginResponse.pb.cc.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.o
+.PHONY : protobuf/loginResponse.pb.cc.o
+
+protobuf/loginResponse.pb.i: protobuf/loginResponse.pb.cc.i
+
+.PHONY : protobuf/loginResponse.pb.i
+
+# target to preprocess a source file
+protobuf/loginResponse.pb.cc.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.i
+.PHONY : protobuf/loginResponse.pb.cc.i
+
+protobuf/loginResponse.pb.s: protobuf/loginResponse.pb.cc.s
+
+.PHONY : protobuf/loginResponse.pb.s
+
+# target to generate assembly for a file
+protobuf/loginResponse.pb.cc.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/protobuf/loginResponse.pb.cc.s
+.PHONY : protobuf/loginResponse.pb.cc.s
+
+serverProxy.o: serverProxy.cpp.o
+
+.PHONY : serverProxy.o
+
+# target to build an object file
+serverProxy.cpp.o:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/serverProxy.cpp.o
+.PHONY : serverProxy.cpp.o
+
+serverProxy.i: serverProxy.cpp.i
+
+.PHONY : serverProxy.i
+
+# target to preprocess a source file
+serverProxy.cpp.i:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/serverProxy.cpp.i
+.PHONY : serverProxy.cpp.i
+
+serverProxy.s: serverProxy.cpp.s
+
+.PHONY : serverProxy.s
+
+# target to generate assembly for a file
+serverProxy.cpp.s:
+	$(MAKE) -f CMakeFiles/vote_server.dir/build.make CMakeFiles/vote_server.dir/serverProxy.cpp.s
+.PHONY : serverProxy.cpp.s
 
 # Help Target
 help:
@@ -213,15 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... vote_server"
+	@echo "... clientProxy.o"
+	@echo "... clientProxy.i"
+	@echo "... clientProxy.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... requestHandler.o"
-	@echo "... requestHandler.i"
-	@echo "... requestHandler.s"
-	@echo "... server.o"
-	@echo "... server.i"
-	@echo "... server.s"
+	@echo "... protobuf/createVoteResponse.pb.o"
+	@echo "... protobuf/createVoteResponse.pb.i"
+	@echo "... protobuf/createVoteResponse.pb.s"
+	@echo "... protobuf/loginRequest.pb.o"
+	@echo "... protobuf/loginRequest.pb.i"
+	@echo "... protobuf/loginRequest.pb.s"
+	@echo "... protobuf/loginResponse.pb.o"
+	@echo "... protobuf/loginResponse.pb.i"
+	@echo "... protobuf/loginResponse.pb.s"
+	@echo "... serverProxy.o"
+	@echo "... serverProxy.i"
+	@echo "... serverProxy.s"
 .PHONY : help
 
 

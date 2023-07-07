@@ -82,19 +82,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/icf/vote/clientProxy.cpp">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/clientProxy.h">
+			<Option target="vote_server"/>
+		</Unit>
 		<Unit filename="/home/icf/vote/main.cpp">
 			<Option target="vote_server"/>
 		</Unit>
-		<Unit filename="/home/icf/vote/requestHandler.cpp">
+		<Unit filename="/home/icf/vote/protobuf/createVoteResponse.pb.cc">
 			<Option target="vote_server"/>
 		</Unit>
-		<Unit filename="/home/icf/vote/requestHandler.h">
+		<Unit filename="/home/icf/vote/protobuf/createVoteResponse.pb.h">
 			<Option target="vote_server"/>
 		</Unit>
-		<Unit filename="/home/icf/vote/server.cpp">
+		<Unit filename="/home/icf/vote/protobuf/loginRequest.pb.cc">
 			<Option target="vote_server"/>
 		</Unit>
-		<Unit filename="/home/icf/vote/server.h">
+		<Unit filename="/home/icf/vote/protobuf/loginRequest.pb.h">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/protobuf/loginResponse.pb.cc">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/serverProxy.cpp">
+			<Option target="vote_server"/>
+		</Unit>
+		<Unit filename="/home/icf/vote/serverProxy.h">
 			<Option target="vote_server"/>
 		</Unit>
 		<Unit filename="/home/icf/vote/CMakeLists.txt">
