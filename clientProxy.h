@@ -5,6 +5,7 @@
 #include "pistache/http.h"
 #include "pistache/router.h"
 #include "rapidjson/document.h"
+#include "log.h"
 
 class clientProxy {
 public:
@@ -20,9 +21,9 @@ public:
         endpoint->serve();
      }
 private:
-    //注册入口
-    void registrationInterface();
-    //注册的API
+     //注册入口
+     void registrationInterface();
+     //注册的API
      void voteLogin_option(const Pistache::Rest::Request &req, Pistache::Http::ResponseWriter resp);
      void voteLogin(const Pistache::Rest::Request &req, Pistache::Http::ResponseWriter resp);
      void voteCreate(const Pistache::Rest::Request &req, Pistache::Http::ResponseWriter resp);
@@ -30,8 +31,10 @@ private:
      void voteGetAllVotes(const Pistache::Rest::Request &req, Pistache::Http::ResponseWriter resp);
      void voteGetOnesVotes(const Pistache::Rest::Request &req, Pistache::Http::ResponseWriter resp);
      void voteGetVoteRes(const Pistache::Rest::Request &req, Pistache::Http::ResponseWriter resp);
-    //路由
+     //路由
      Pistache::Rest::Router router;
+     //日志
+     LogFile lg;
 };
 
 #endif //VOTE_SERVER_CLIENTPROXY_H

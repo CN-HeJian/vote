@@ -1,6 +1,7 @@
 #include <google/protobuf/util/json_util.h>
 #include "clientProxy.h"
 #include "serverProxy.h"
+#include "UTF8Url.h"
 //登录
 #include "./protobuf/loginRequest.pb.h"
 #include "./protobuf/loginResponse.pb.h"
@@ -79,9 +80,11 @@ void clientProxy::voteLogin(const Pistache::Rest::Request &req, Pistache::Http::
     std::cout<<"服务端查询的"<<lgrq_str<<std::endl;
 
     //Mock
-//    protoMsg::LoginResponse lgrsp;
-//    lgrsp.set_uname("admin");
-//    lgrsp.set_id("3");
+    /*
+    protoMsg::LoginResponse lgrsp;
+    lgrsp.set_uname("admin");
+    lgrsp.set_id("3");
+     */
 
     //Protubuf-->string
     std::string result;
@@ -164,8 +167,10 @@ void clientProxy::voteCreate(const Pistache::Rest::Request &req, Pistache::Http:
     cvrsp.ParseFromString(resp_str);
 
     //Mock
-//    protoMsg::CreateVoteResponse cvrsp;
-//    cvrsp.set_result("1");
+    /*
+    protoMsg::CreateVoteResponse cvrsp;
+    cvrsp.set_result("1");
+     */
 
     //Protubuf-->string
     std::string result;
@@ -222,13 +227,15 @@ void clientProxy::voteJudge(const Pistache::Rest::Request &req, Pistache::Http::
     vtrsp.ParseFromString(resp_str);
 
     //Mock
-//    protoMsg::VoteResponse vtrsp;
-//    protoMsg::VoteResponse_Plaerscore* onePlayer = vtrsp.add_playerscores();
-//    onePlayer->set_name("xiaoming");
-//    onePlayer->set_score("1");
-//    protoMsg::VoteResponse_Plaerscore* anotherPlayer = vtrsp.add_playerscores();
-//    anotherPlayer->set_name("lihong");
-//    anotherPlayer->set_score("0");
+    /*
+    protoMsg::VoteResponse vtrsp;
+    protoMsg::VoteResponse_Plaerscore* onePlayer = vtrsp.add_playerscores();
+    onePlayer->set_name("xiaoming");
+    onePlayer->set_score("1");
+    protoMsg::VoteResponse_Plaerscore* anotherPlayer = vtrsp.add_playerscores();
+    anotherPlayer->set_name("lihong");
+    anotherPlayer->set_score("0");
+     */
 
     //Protubuf-->string
     std::string result;
@@ -250,8 +257,6 @@ void clientProxy::voteGetAllVotes(const Pistache::Rest::Request &req, Pistache::
     rapidjson::Document doc;
     doc.Parse(req.body().c_str());
     protoMsg::GetAllVotes getvts;
-    //Json-->Protubuf
-    //voteGetAllVotes_JsonToProtobuf(doc,getvts);
     //Protubuf-->string
     std::string getvtsrq_str;
     //getvts.SerializeToString(&getvtsrq_str);
@@ -262,16 +267,19 @@ void clientProxy::voteGetAllVotes(const Pistache::Rest::Request &req, Pistache::
     std::string resp_str = sp.remoteCall(getvtsrq_str);
     protoMsg::GetAllVotesResponse vtsrsp;
     vtsrsp.ParseFromString(resp_str);
+
     //Mock
-//    protoMsg::GetAllVotesResponse vtsrsp;
-//    protoMsg::GetAllVotesResponse_Vote* oneVote = vtsrsp.add_votes();
-//    oneVote->set_votename("春游");
-//    oneVote->set_voteid("2345");
-//    oneVote->set_isvalid("true");
-//    protoMsg::GetAllVotesResponse_Vote* anotherPlayer = vtsrsp.add_votes();
-//    anotherPlayer->set_votename("春游");
-//    anotherPlayer->set_voteid("23");
-//    anotherPlayer->set_isvalid("te");
+    /*
+    protoMsg::GetAllVotesResponse vtsrsp;
+    protoMsg::GetAllVotesResponse_Vote* oneVote = vtsrsp.add_votes();
+    oneVote->set_votename("春游");
+    oneVote->set_voteid("2345");
+    oneVote->set_isvalid("true");
+    protoMsg::GetAllVotesResponse_Vote* anotherPlayer = vtsrsp.add_votes();
+    anotherPlayer->set_votename("春游");
+    anotherPlayer->set_voteid("23");
+    anotherPlayer->set_isvalid("te");
+     */
 
     std::string result;
     auto ret = google::protobuf::util::MessageToJsonString(vtsrsp,&result);
@@ -290,62 +298,6 @@ void voteGetOnesVotes_JsonToProtobuf(rapidjson::Document& doc,protoMsg::GetVoteR
     getOnesVotes.set_uname(uname);
 }
 
-struct UTF8Url
-{
-    static std::string Decode(const std::string & url);
-
-private:
-    static const std::string & HEX_2_NUM_MAP();
-    static const std::string & ASCII_EXCEPTION();
-    static unsigned char NUM_2_HEX(const char h, const char l);
-};
-
-const std::string & UTF8Url::HEX_2_NUM_MAP()
-{
-    static const std::string str("0123456789ABCDEF");
-    return str;
-}
-
-const std::string & UTF8Url::ASCII_EXCEPTION()
-{
-    static const std::string str(R"("%<>[\]^_`{|})");
-    return str;
-}
-
-unsigned char UTF8Url::NUM_2_HEX(const char h, const char l)
-{
-    unsigned char hh = std::find(std::begin(HEX_2_NUM_MAP()), std::end(HEX_2_NUM_MAP()), h) - std::begin(HEX_2_NUM_MAP());
-    unsigned char ll = std::find(std::begin(HEX_2_NUM_MAP()), std::end(HEX_2_NUM_MAP()), l) - std::begin(HEX_2_NUM_MAP());
-    return (hh << 4) + ll;
-}
-
-
-std::string UTF8Url::Decode(const std::string & url)
-{
-    std::string ret;
-    for (auto it = url.begin(); it != url.end(); ++it)
-    {
-        if (*it == '%')
-        {
-            if (std::next(it++) == url.end())
-            {
-                throw std::invalid_argument("url is invalid");
-            }
-            ret.push_back(NUM_2_HEX(*it, *std::next(it)));
-            if (std::next(it++) == url.end())
-            {
-                throw std::invalid_argument("url is invalid");
-            }
-        }
-        else
-        {
-            ret.push_back(*it);
-        }
-    }
-    return ret;
-}
-
-
 //获取某人名下的投票
 void clientProxy::voteGetOnesVotes(const Pistache::Rest::Request &req, Pistache::Http::ResponseWriter resp){
     //
@@ -361,8 +313,6 @@ void clientProxy::voteGetOnesVotes(const Pistache::Rest::Request &req, Pistache:
     std::string toCh;
     toCh = UTF8Url::Decode(JudgeName);
     getOnesVotes.set_uname(toCh);
-    //Json-->Protubuf
-    //voteGetOnesVotes_JsonToProtobuf(doc,getOnesVotes);
     //Protubuf-->string
     std::string getOnesVotes_str;
     getOnesVotes.SerializeToString(&getOnesVotes_str);
@@ -373,31 +323,27 @@ void clientProxy::voteGetOnesVotes(const Pistache::Rest::Request &req, Pistache:
     std::string resp_str = sp.remoteCall(getOnesVotes_str);
     protoMsg::GetVoteResultByOneJudgeResponse getOnesVotesrsp;
     getOnesVotesrsp.ParseFromString(resp_str);
+
     //Mock
-//    protoMsg::GetVoteResultByOneJudgeResponse getOnesVotesrsp;
-//    protoMsg::GetVoteResultByOneJudgeResponse_Vote* oneVote = getOnesVotesrsp.add_votes();
-//    oneVote->set_votename("小明管理的");
-//    oneVote->set_voteid("2345");
-//    oneVote->set_isvalid("true");
-//    protoMsg::GetVoteResultByOneJudgeResponse_Vote* anotherPlayer = getOnesVotesrsp.add_votes();
-//    anotherPlayer->set_votename("小明管理的");
-//    anotherPlayer->set_voteid("23");
-//    anotherPlayer->set_isvalid("te");
-//    anotherPlayer->set_isvoted("1");
+    /*
+    protoMsg::GetVoteResultByOneJudgeResponse getOnesVotesrsp;
+    protoMsg::GetVoteResultByOneJudgeResponse_Vote* oneVote = getOnesVotesrsp.add_votes();
+    oneVote->set_votename("小明管理的");
+    oneVote->set_voteid("2345");
+    oneVote->set_isvalid("true");
+    protoMsg::GetVoteResultByOneJudgeResponse_Vote* anotherPlayer = getOnesVotesrsp.add_votes();
+    anotherPlayer->set_votename("小明管理的");
+    anotherPlayer->set_voteid("23");
+    anotherPlayer->set_isvalid("te");
+    anotherPlayer->set_isvoted("1");
+    */
+
     //Protubuf-->string
     std::string result;
     auto ret = google::protobuf::util::MessageToJsonString(getOnesVotesrsp,&result);
     resp.headers().add<Pistache::Http::Header::AccessControlAllowOrigin>("*");
     resp.headers().add<Pistache::Http::Header::AccessControlAllowHeaders>("*");
     resp.send(Pistache::Http::Code::Ok, result);
-}
-
-//获取投票结果--- json-->protubuf
-void voteGetVoteRes_JsonToProtobuf(rapidjson::Document& doc,protoMsg::GetVoteResult &getres){
-    //std::string type = doc["type"].GetString();
-    //std::string voteId = doc["voteID"].GetString();
-    //getres.set_type(type);
-    //getres.set_voteid(voteId);
 }
 
 //获取投票结果
@@ -411,7 +357,6 @@ void clientProxy::voteGetVoteRes(const Pistache::Rest::Request &req, Pistache::H
     doc.Parse(req.body().c_str());
     protoMsg::GetVoteResult getres;
     //Json-->Protubuf
-    //voteGetVoteRes_JsonToProtobuf(doc,getres);
     getres.set_voteid(VoteId);
     std::cout<<"recev Vote: "<<VoteId<<std::endl;
     //Protubuf-->string
@@ -427,16 +372,19 @@ void clientProxy::voteGetVoteRes(const Pistache::Rest::Request &req, Pistache::H
     voteRes.ParseFromString(resp_str);
 
     //Mock
-//    protoMsg::VoteResponse voteRes;
-//    protoMsg::VoteResponse_Plaerscore* oneVote = voteRes.add_playerscores();
-//    oneVote->set_name("红");
-//    oneVote->set_score("4.5");
-//    protoMsg::VoteResponse_Plaerscore* anotherPlayer = voteRes.add_playerscores();
-//    anotherPlayer->set_score("1.2");
-//    anotherPlayer->set_name("蓝");
-//    protoMsg::VoteResponse_Plaerscore* third = voteRes.add_playerscores();
-//    third->set_score("3.2");
-//    third->set_name("黄");
+    /*
+    protoMsg::VoteResponse voteRes;
+    protoMsg::VoteResponse_Plaerscore* oneVote = voteRes.add_playerscores();
+    oneVote->set_name("红");
+    oneVote->set_score("4.5");
+    protoMsg::VoteResponse_Plaerscore* anotherPlayer = voteRes.add_playerscores();
+    anotherPlayer->set_score("1.2");
+    anotherPlayer->set_name("蓝");
+    protoMsg::VoteResponse_Plaerscore* third = voteRes.add_playerscores();
+    third->set_score("3.2");
+    third->set_name("黄");
+    */
+
     //Protubuf-->string
     std::string result;
     //std::cout<<"投票结果"<<result<<std::endl;
